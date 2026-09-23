@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: SiarheiKuchuk.FtpsServer
+PackageVersion: 2026.09.21
+Platform:
+- Windows.Desktop
+InstallerType: nullsoft
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: uninstallPrevious
+ProductCode: FTPS Server
+ReleaseDate: 2026-09-21
+Installers:
+- InstallerUrl: https://github.com/drweb86/dotnet-ftps-server/releases/download/2026.09.21/ftpsserver_2026.09.21_windows_setup.exe
+  Platform:
+    - Windows.Desktop
+  Architecture: arm64
+  InstallerSha256: 17DF8CE5BAD2692BD832B4C7E915E25E3165A8A3D66A4C4C7D1728A7977E5BAC
+  Scope: user
+  InstallerSwitches:
+    Custom: /CLOSEAPPLICATIONS /CURRENTUSER /S
+- InstallerUrl: https://github.com/drweb86/dotnet-ftps-server/releases/download/2026.09.21/ftpsserver_2026.09.21_windows_setup.exe
+  Platform:
+    - Windows.Desktop
+  Architecture: arm64
+  InstallerSha256: 17DF8CE5BAD2692BD832B4C7E915E25E3165A8A3D66A4C4C7D1728A7977E5BAC
+  Scope: machine
+  InstallerSwitches:
+    Custom: /CLOSEAPPLICATIONS /ALLUSERS /S
+  ElevationRequirement: elevationRequired
+- InstallerUrl: https://github.com/drweb86/dotnet-ftps-server/releases/download/2026.09.21/ftpsserver_2026.09.21_windows_setup.exe
+  Platform:
+    - Windows.Desktop
+  Architecture: x64
+  InstallerSha256: 17DF8CE5BAD2692BD832B4C7E915E25E3165A8A3D66A4C4C7D1728A7977E5BAC
+  Scope: user
+  InstallerSwitches:
+    Custom: /CLOSEAPPLICATIONS /CURRENTUSER /S
+- InstallerUrl: https://github.com/drweb86/dotnet-ftps-server/releases/download/2026.09.21/ftpsserver_2026.09.21_windows_setup.exe
+  Platform:
+    - Windows.Desktop
+  Architecture: x64
+  InstallerSha256: 17DF8CE5BAD2692BD832B4C7E915E25E3165A8A3D66A4C4C7D1728A7977E5BAC
+  Scope: machine
+  InstallerSwitches:
+    Custom: /CLOSEAPPLICATIONS /ALLUSERS /S
+  ElevationRequirement: elevationRequired
+ManifestType: installer
+ManifestVersion: 1.12.0
