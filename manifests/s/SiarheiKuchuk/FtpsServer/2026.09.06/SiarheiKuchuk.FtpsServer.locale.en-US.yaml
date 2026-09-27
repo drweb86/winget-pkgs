@@ -6,6 +6,7 @@ PackageLocale: en-US
 Publisher: Siarhei Kuchuk
 PublisherUrl: https://github.com/drweb86
 PublisherSupportUrl: https://github.com/drweb86/dotnet-ftps-server/issues
+PrivacyUrl: https://github.com/drweb86/dotnet-ftps-server/blob/main/privacy/desktop/README.md
 Author: Siarhei Kuchuk
 PackageName: FtpsServer
 PackageUrl: https://github.com/drweb86/dotnet-ftps-server
